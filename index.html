@@ -10,6 +10,9 @@
 
 
 <script type="text/javascript" src="/jquery/jquery-1.9.0.min.js"></script>
+<script type="text/javascript" src="/js/functions.js"></script>
+
+
 
 
 <link rel='stylesheet' type='text/css' href='/css/framework.css' />
@@ -24,17 +27,43 @@
 
 
 <body class="gris1_BG">
-
 <div class="page">
 
-<div class="contenedor gris2_BG shadow">
-<div class="cabcontenerdor">
-<div class="tit_contenedor">Gestión de inventario</div>
-<div class="iconos closeW"></div>	
+
+<div id="menu">
+<ul id="nav">
+	<li><a>Mantenimiento</a>
+		<ul class="submenu">
+        	<li onclick="javascript:owin('v_1','Test1');"><a>Test1</a></li>
+            <li onclick="javascript:owin('v_2','Test2');"><a>Test2</a></li>
+            <li onclick="javascript:owin('v_3','Test3');"><a>Test3</a></li>
+        </ul>
+	</li>
+    <li><a>Gestión de Almacén</a></li>
+    <li><a>Informes generales</a>
+    	<ul class="submenu">
+        	<li onclick="javascript:owin('v_4','Informes de ventas online');"><a>Informes de ventas online</a></li>
+            <li onclick="javascript:owin('v_5','Test5');"><a>Test5</a></li>
+            <li onclick="javascript:owin('v_6','Test6');"><a>Test6</a></li>
+        </ul>
+    </li>
+    <li><a>Utilidades</a></li>
+   
+</ul>
 </div>
 
-	
-</div>	
+
+
+
+<div id="ventanas">
+
+
+</div>
+
+
+<div class="minimizadas" id="minimizadas">
+
+</div>
 
 
 </div>
@@ -42,3 +71,16 @@
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
